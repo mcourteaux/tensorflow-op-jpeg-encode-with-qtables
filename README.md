@@ -2,7 +2,7 @@
 
 ## Building
 
-To build the op into `compress_op.so`, use:
+To build the op into `jpeg_encode_with_qtables.so`, use:
 
 ```sh
 make 
@@ -21,7 +21,7 @@ Then using the conventional way of loading custom ops in TensorFlow:
 ```py
 import tensorflow as tf
 
-module = tf.load_op_library("./compress_op.so")
+module = tf.load_op_library("./jpeg_encode_with_qtables.so")
 
 img = ... # shape: (w, h, 3), uint8
 qtable_luma = ... # shape: (8, 8), uint32

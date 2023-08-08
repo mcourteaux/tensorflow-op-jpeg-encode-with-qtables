@@ -1,7 +1,7 @@
 import tensorflow as tf
 
 print("Load custom JPEG compression library")
-module = tf.load_op_library("./compress_op.so")
+module = tf.load_op_library("./jpeg_encode_with_qtables.so")
 print()
 
 
