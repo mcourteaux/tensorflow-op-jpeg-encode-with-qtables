@@ -14,7 +14,7 @@ $(SO_NAME): jpeg_encode_with_qtables.cc
 	$(CC) -shared jpeg_encode_with_qtables.cc $(TF_COMPILE_FLAGS) $(TF_LINK_FLAGS) $(JPEG_FLAGS) -fPIC -O2 -o $@
 
 clean:
-	rm -f $(SO_NAME) test_input.png test_output_chromass.jpeg test_output_nochromass.jpg
+	rm -f $(SO_NAME) test_input.png test_output_chromass.jpg test_output_nochromass.jpg
 
 test_input.png:
 	wget https://seeklogo.com/images/U/ubuntu-linux-logo-A8280F4D05-seeklogo.com.png -O $@
